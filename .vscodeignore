@@ -1,0 +1,6 @@
+.vscode/**
+.editorconfig
+.gitignore
+.prettierrc
+yarn.lock
+node_modules/**
