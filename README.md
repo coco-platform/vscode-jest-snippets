@@ -43,13 +43,26 @@ Below is a list of all available snippets and the triggers of each one. The **�
 
 ### Expect
 
+|   Trigger | Content                  |
+| --------: | ------------------------ |
+|    `exp→` | expect                   |
+|   `expa→` | expect.anything          |
+| `expact→` | expect.any               |
+|   `expe→` | expect.extend            |
+|  `expea→` | expect.extend async      |
+|  `expac→` | expect.arrayContaining   |
+|  `expoc→` | expect.objectContaining  |
+|  `expsc→` | expect.stringContaining  |
+|  `expsm→` | expect.stringMatching    |
+|   `expr→` | expect.resolves          |
+|  `exprj→` | expect.rejects           |
+|  `expas→` | expect.assertions(count) |
+|  `expha→` | expect.hasAssertions()   |
+
+### Expect Matcher
+
 |   Trigger | Content                            |
 | --------: | ---------------------------------- |
-|    `exp→` | expect                             |
-|   `expr→` | expect.resolves                    |
-|  `exprj→` | expect.rejects                     |
-|  `expas→` | expect.assertions(count)           |
-|  `expha→` | expect.hasAssertions()             |
 |     `tb→` | toBe                               |
 |   `tbct→` | toBeCloseTo                        |
 |    `tbd→` | toBeDefined                        |
@@ -92,7 +105,32 @@ Below is a list of all available snippets and the triggers of each one. The **�
 | ------: | ------- |
 |  `jfn→` | jest.fn |
 
-## Settings
+## Changelog
+
+### [1.1.0] - 2020-06-12
+
+- `expa→` --> `expect.anything`
+- `expact→` --> `expect.any`
+- `expe→` --> `expect.extend`
+- `expea→` --> `expect.extend async`
+- `expac→` --> `expect.arrayContaining`
+- `expoc→` --> `expect.objectContaining`
+- `expsc→` --> `expect.stringContaining`
+- `expsm→` --> `expect.stringMatching`
+
+### [1.0.0] - 2020-06012
+
+- `descoe→` --> `describe.only.each`
+- `descse→` --> `describe.skip.each`
+- `testoe→` --> `test.only.each`
+- `testse→` --> `test.skip.each`
+- `thr→` --> `toHaveReturned`
+- `thrt→` --> `toHaveReturnedTimes`
+- `thrw→` --> `toHaveReturnedWith`
+- `thlrw→` --> `toHaveLastReturnedWith`
+- `thnrw→` --> `toHaveNthReturnedWith`
+
+## Settingse
 
 The `editor.snippetSuggestions` setting in vscode `settings.json` will show snippets on top of the suggestion list.
 

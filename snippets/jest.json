@@ -81,6 +81,58 @@
     "description": "expect actual value",
     "prefix": "exp"
   },
+  "expect.extend": {
+    "body": [
+      "expect.extend({",
+      "\t${1:toMatchCondition}(received, expected){",
+      "\t\t$0",
+      "\t}",
+      "})"
+    ],
+    "description": "add additional matchers to Jest",
+    "prefix": "expe"
+  },
+  "expect.extend.async": {
+    "body": [
+      "expect.extend({",
+      "\tasync ${1:toMatchCondition}(received, expected){",
+      "\t\t$0",
+      "\t}",
+      "})"
+    ],
+    "description": "add additional matchers to Jest",
+    "prefix": "expea"
+  },
+  "expect.anything": {
+    "body": "expect.anything()",
+    "description": "match anything but null or undefined",
+    "prefix": "expa"
+  },
+  "expect.any": {
+    "body": "expect.anything(${1:constructor})",
+    "description": "match anything that was created with the given constructo",
+    "prefix": "expact"
+  },
+  "expect.arrayContaining": {
+    "body": "expect.arrayContaining(${0:array})",
+    "description": "matches a received array which contains all of the elements in the expected array",
+    "prefix": "expac"
+  },
+  "expect.objectContaining": {
+    "body": "expect.objectContaining(${0:object})",
+    "description": "matches any received object that recursively matches the expected properties",
+    "prefix": "expoc"
+  },
+  "expect.stringContaining": {
+    "body": "expect.stringContaining(${0:string})",
+    "description": "matches the received value if it is a string that contains the exact expected string.",
+    "prefix": "expsc"
+  },
+  "expect.stringMatching": {
+    "body": "expect.stringMatching(${0:string | regexp})",
+    "description": "matches the received value if it is a string that matches the expected string or regular expression",
+    "prefix": "expsm"
+  },
   "expect.assertions": {
     "body": "expect.assertions($0);",
     "description": "expects the test to make the indicated number of assertions (useful for async)",
